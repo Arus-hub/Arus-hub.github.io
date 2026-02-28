@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Training Simulator | Aradhya Talawar</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="hero-small">
+    <nav>
+      <a href="../index.html">← Back to Portfolio</a>
+      <a href="../index.html#projects">All Projects</a>
+    </nav>
+  </div>
+
+  <main class="project-detail">
+    <section class="project-header">
+      <h1>Immersive Distance Learning Platform for Electrical Apprentices</h1>
+      <p class="project-tagline">A cloud‑deployed Moodle + VR training ecosystem enabling apprentices to safely master high‑risk electrical procedures remotely.</p>
+      
+      <img src="../images/electrical.png" alt="VR Training Simulator Hero" class="project-hero-img">
+    </section>
+
+    <!-- Vision & Context -->
+    <section id="vision-context" class="info-block">
+      <h3>Vision &amp; Context</h3>
+      <p>Electrical apprentices will go on to work on power grids, domestic circuits, and industrial systems. Mistakes in safety isolation, PPE usage, or tool selection can result in fatal consequences.</p>
+      <p>The goal was to redesign Health &amp; Safety training so apprentices could learn theory remotely and repeatedly practice high‑risk procedures in a safe immersive environment before handling real equipment.</p>
+      <p>This elevates the project beyond “cool VR”.</p>
+    </section>
+
+    <!-- Core Problem -->
+    <section id="core-problem" class="info-block">
+      <h3>The Core Problem</h3>
+      <div class="accordion">
+        <details open>
+          <summary>Training Limitations Before</summary>
+          <ul>
+            <li>Apprentices had to be physically present at TDR for theory and practical training</li>
+            <li>High-risk procedures (e.g., safety isolation) could only be practiced under supervision</li>
+            <li>Limited repetition opportunities</li>
+            <li>Inconsistent exposure to hazards</li>
+            <li>Resource and scheduling constraints</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Why This Was a Problem</summary>
+          <ul>
+            <li>Safety-critical industry</li>
+            <li>Limited hands-on practice before real equipment exposure</li>
+            <li>Scalability constraints for distance learners</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Why VR + LMS?</summary>
+          <ul>
+            <li>Moodle for structured theory delivery</li>
+            <li>VR for safe, repeatable, immersive practice</li>
+            <li>Cloud deployment for remote accessibility</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- Solution Architecture -->
+    <section id="solution-architecture" class="info-block">
+      <h3>Solution Architecture</h3>
+      <h4>Distance Learning Flow</h4>
+      <ol>
+        <li>Complete Moodle theory modules</li>
+        <li>Watch AI-generated training videos</li>
+        <li>Enter VR scenarios</li>
+        <li>Apply knowledge in immersive simulations</li>
+        <li>Receive feedback and reinforcement</li>
+      </ol>
+      <h4>Technical Architecture</h4>
+      <ul>
+        <li>Moodle (LMS) hosted on Cloud VPS</li>
+        <li>Apache + PostgreSQL backend</li>
+        <li>Unity VR Application (OpenXR)</li>
+        <li>XR Interaction Toolkit</li>
+        <li>Blender assets</li>
+        <li>C# interaction logic</li>
+      </ul>
+      
+    </section>
+
+    <!-- VR Scenarios -->
+    <section id="vr-scenarios" class="info-block">
+      <h3>The VR Scenarios</h3>
+      <article class="scenario">
+        <div class="scenario-text">
+          <h4>Scenario 1: Hazard Identification</h4>
+          <p>Learners explore a virtual workshop and identify safety hazards.</p>
+          <ul>
+            <li>Interactive environment scanning</li>
+            <li>Contextual explanations upon selection</li>
+            <li>Educational feedback on risks and mitigation</li>
+            <li>Designed to improve environmental awareness</li>
+          </ul>
+          <p><strong>Learning Impact:</strong> Encourages attention to detail and proactive hazard recognition.</p>
+        </div>
+        <div class="scenario-img">
+          <img src="../images/scenario1.png" alt="Hazard identification view" class="interactive-img">
+        </div>
+      </article>
+      <article class="scenario reverse">
+        <div class="scenario-text">
+          <h4>Scenario 2: Appropriate PPE Selection</h4>
+          <p>Learners equip a worker with correct PPE for workshop conditions.</p>
+          <ul>
+            <li>Interactive object pickup</li>
+            <li>On-selection text guidance</li>
+            <li>Voice-over explanations</li>
+            <li>Reinforced safety rationale</li>
+          </ul>
+          <p><strong>Learning Impact:</strong> Strengthens procedural memory for PPE compliance.</p>
+        </div>
+        <div class="scenario-img">
+          <img src="../images/scenario2.png" alt="PPE selection view" class="interactive-img">
+        </div>
+      </article>
+      <article class="scenario">
+        <div class="scenario-text">
+          <h4>Scenario 3: Safety Isolation (Critical Scenario)</h4>
+          <p>High-risk electrical isolation procedure simulated in VR.</p>
+          <ul>
+            <li>Step-by-step isolation process</li>
+            <li>Consequence awareness</li>
+            <li>Repeatable practice</li>
+            <li>Tutor-validated workflow design</li>
+          </ul>
+          <p><strong>Why This Matters:</strong> Incorrect isolation in real life can cause fatal injuries. VR allows unlimited safe repetition before real-world execution.</p>
+        </div>
+        <div class="scenario-img">
+          <img src="../images/scenario3.png" alt="Safety isolation view" class="interactive-img">
+        </div>
+      </article>
+      <article class="scenario reverse">
+        <div class="scenario-text">
+          <h4>Scenario 4: Tools Selection</h4>
+          <p>Learners select correct tools for electrical circuit work.</p>
+          <ul>
+            <li>Equipment evaluation</li>
+            <li>Error-based learning</li>
+            <li>Reinforced safe tool usage</li>
+          </ul>
+          <p><strong>Impact:</strong> Reduces risk of short circuits, equipment damage, and injury.</p>
+        </div>
+        <div class="scenario-img">
+          <img src="../images/scenario4.png" alt="Tools selection view" class="interactive-img">
+        </div>
+      </article>
+    </section>
+
+    <!-- My Role -->
+    <section id="my-role" class="info-block">
+      <h3>My Role</h3>
+      <h4>End-to-End Ownership</h4>
+      <p>I acted as the systems engineer, instructional designer, and developer from concept through pilot evaluation.</p>
+      <h5>Instructional Design</h5>
+      <ul>
+        <li>Designed course structure from existing learning material</li>
+        <li>Leveraged AI to expand and structure educational content</li>
+        <li>Created video lessons using Synthesia AI</li>
+      </ul>
+      <h5>LMS Engineering</h5>
+      <ul>
+        <li>Deployed Moodle locally (Oracle VirtualBox + Ubuntu + Apache + PostgreSQL)</li>
+        <li>Configured database and server environment</li>
+        <li>Migrated and deployed Moodle to production VPS</li>
+        <li>Conducted usability testing with apprentices and tutors</li>
+      </ul>
+      <h5>VR Development</h5>
+      <ul>
+        <li>Designed interaction flow validated by electrical tutor</li>
+        <li>Built immersive scenarios using Unity (C#)</li>
+        <li>Implemented XR Interaction Toolkit logic</li>
+        <li>Developed interaction systems for tool manipulation, PPE equipping, hazard detection, safety isolation procedures</li>
+      </ul>
+      <h5>Testing &amp; Experimental Evaluation</h5>
+      <ul>
+        <li>Designed comparative study (16 apprentices)</li>
+        <li>Group A: VR-first → Theory → Real isolation</li>
+        <li>Group B: Demonstration → Theory + VR → Real isolation</li>
+        <li>Measured retention and behavioural outcomes</li>
+      </ul>
+    </section>
+
+    <!-- Performance Optimisation -->
+    <section id="performance" class="info-block">
+      <h3>Performance Optimisation</h3>
+      <ul>
+        <li>Static batching</li>
+        <li>Occlusion culling</li>
+        <li>Polycount reduction</li>
+        <li>Baked lighting</li>
+        <li>Draw call reduction</li>
+        <li>Profiling using Unity Profiler</li>
+        <li>Maintained stable 72 FPS on standalone VR hardware</li>
+      </ul>
+      <p>VR requires strict frame stability to prevent discomfort.</p>
+    </section>
+
+    <!-- Evaluation & Measured Outcomes -->
+    <section id="evaluation" class="info-block">
+      <h3>Evaluation &amp; Measured Outcomes</h3>
+      <table class="result-table">
+        <thead>
+          <tr><th>Metric</th><th>Mean</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Engagement</td><td>4.4</td></tr>
+          <tr><td>Motivation</td><td>4.8</td></tr>
+          <tr><td>Clarity of structure</td><td>4.8</td></tr>
+          <tr><td>Intention to adhere to PPE</td><td>5.0</td></tr>
+          <tr><td>Low cognitive load</td><td>4.8</td></tr>
+          <tr><td>Low discomfort</td><td>4.4</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Key Insight:</strong> Learners who practiced safety isolation in VR before real execution showed stronger retention and procedural confidence.</p>
+      <p><strong>Qualitative Feedback:</strong></p>
+      <ul>
+        <li>VR improved attention to small safety details</li>
+        <li>Enhanced understanding of rationale behind PPE</li>
+        <li>Hazard identification required clearer onboarding guidance</li>
+      </ul>
+    </section>
+
+    <!-- Outcome & Impact -->
+    <section id="outcome-impact" class="info-block">
+      <h3>Outcome &amp; Impact</h3>
+      <ul>
+        <li>Developed a scalable remote training model</li>
+        <li>Enabled theory + practical integration outside physical premises</li>
+        <li>Validated learning effectiveness via pilot study</li>
+        <li>Demonstrated improved procedural retention in VR-first learners</li>
+        <li>Built foundation for future commercial rollout</li>
+        <li>Reduced dependency on in-person-only training</li>
+        <li>Improved engagement compared to traditional approach</li>
+      </ul>
+    </section>
+
+    <!-- What I Learned -->
+    <section id="lessons" class="info-block">
+      <h3>What I Learned</h3>
+      <ul>
+        <li>Immersive repetition improves procedural memory</li>
+        <li>VR-first exposure enhances retention of high-risk tasks</li>
+        <li>Performance optimisation is critical to maintain comfort</li>
+        <li>Instructional design and engineering must align</li>
+        <li>Clear onboarding is crucial in exploratory VR experiences</li>
+      </ul>
+    </section>
+
+    <!-- Tech Stack Footer -->
+    <section id="tech-stack-footer" class="info-block tech-stack-footer">
+      <h3>Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h4>Development</h4>
+          <ul>
+            <li>Unity (C#)</li>
+            <li>OpenXR</li>
+            <li>XR Interaction Toolkit</li>
+            <li>Blender</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <h4>Infrastructure</h4>
+          <ul>
+            <li>Moodle</li>
+            <li>Apache</li>
+            <li>PostgreSQL</li>
+            <li>Ubuntu</li>
+            <li>Oracle VirtualBox</li>
+            <li>VPS Deployment</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <h4>Project Management</h4>
+          <ul>
+            <li>MS Project</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Logos display: marquee (desktop) + two-line grid (mobile / reduced motion) -->
+      <div class="tech-logos">
+        <div class="logo-marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <div class="logo-item"><img src="../images/logos/apache.webp" alt="Apache"></div>
+            <div class="logo-item"><img src="../images/logos/blender.webp" alt="Blender"></div>
+            <div class="logo-item"><img src="../images/logos/c%23.webp" alt="C#"></div>
+            <div class="logo-item"><img src="../images/logos/moodle.webp" alt="Moodle"></div>
+            <div class="logo-item"><img src="../images/logos/msproject.webp" alt="MS Project"></div>
+            <div class="logo-item"><img src="../images/logos/postgres.webp" alt="PostgreSQL"></div>
+            <div class="logo-item"><img src="../images/logos/ubuntu.png" alt="Ubuntu"></div>
+            <div class="logo-item"><img src="../images/logos/unity.webp" alt="Unity"></div>
+            <div class="logo-item"><img src="../images/logos/virtualbox.webp" alt="VirtualBox"></div>
+
+            <!-- repeat for seamless loop -->
+            
+          </div>
+        </div>
+
+        <div class="logo-grid" aria-hidden="false">
+          <div class="logo-row">
+            <img src="../images/logos/apache.webp" alt="Apache">
+            <img src="../images/logos/blender.webp" alt="Blender">
+            <img src="../images/logos/c%23.webp" alt="C#">
+            <img src="../images/logos/moodle.webp" alt="Moodle">
+            <img src="../images/logos/msproject.webp" alt="MS Project">
+          </div>
+          <div class="logo-row">
+            <img src="../images/logos/postgres.webp" alt="PostgreSQL">
+            <img src="../images/logos/ubuntu.png" alt="Ubuntu">
+            <img src="../images/logos/unity.webp" alt="Unity">
+            <img src="../images/logos/virtualbox.webp" alt="VirtualBox">
+          </div>
+        </div>
+      </div>
+      <!-- Sequential carousel (one logo at a time) for company-style loop -->
+      <div class="logo-carousel" aria-live="polite" aria-label="Technologies used">
+        <div class="carousel-track"></div>
+      </div>
+    </section>
+
+    <!-- Positioning -->
+    <section id="positioning" class="info-block">
+      <h3>How This Positions Me</h3>
+      <ul>
+        <li>This person can design systems</li>
+        <li>This person understands pedagogy &amp; engineering</li>
+        <li>This person can deploy infrastructure</li>
+        <li>This person validates work with data</li>
+        <li>This person thinks about safety, performance, scalability</li>
+        <li>Not just a VR dev but a Digital Training Systems Engineer</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Aradhya Talawar</p>
+  </footer>
+
+  <script>
+    // no‑op: native details/summary used for collapsible sections
+  </script>
+  <script>
+    // Build sliding carousel using CSS animation only.
+    (function(){
+      try {
+        const srcs = Array.from(document.querySelectorAll('.logo-item img'))
+          .map(i=>i.getAttribute('src'))
+          .filter(Boolean);
+        if (!srcs.length) return;
+        document.body.classList.add('js-logo-carousel');
+        const carousel = document.querySelector('.logo-carousel');
+        const track = carousel.querySelector('.carousel-track');
+        // append two copies for seamless loop
+        srcs.concat(srcs).forEach(src=>{
+          const img=document.createElement('img');
+          img.src=src;
+          img.alt=src.split('/').pop().split('.')[0];
+          track.appendChild(img);
+        });
+      } catch(e){ console.warn('carousel init failed',e); }
+    })();
+  </script>
+  </body>
+</html>
